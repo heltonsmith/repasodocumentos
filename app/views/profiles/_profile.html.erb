@@ -1,0 +1,16 @@
+<div id="<%= dom_id profile %>">
+  <p>
+    <strong>Name:</strong>
+    <%= profile.name %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= profile.description %>
+  </p>
+  
+  <br>
+
+  <%= image_tag profile.mifoto.variant(resize_to_limit: [200, 200]) %>
+
+</div>
